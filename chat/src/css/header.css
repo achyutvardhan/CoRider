@@ -1,0 +1,20 @@
+.external-header{
+ width: 100%;
+ margin: 0%;
+ padding: 0%;
+}
+
+.internal-header{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.one-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+

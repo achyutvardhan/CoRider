@@ -1,0 +1,22 @@
+.external-input{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+   }
+   
+   .internal-input{
+    padding: 11px 12px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       border: 2px solid rgb(248, 239, 239) ;
+       border-radius: 8px;
+       margin: 25px;
+   }
+   .in-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   }

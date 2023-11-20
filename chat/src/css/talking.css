@@ -1,0 +1,34 @@
+.external-talking{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+   }
+   
+   .internal-talking{
+       padding: 20px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 20px;
+   }
+   .one-box{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+   .insider{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    font-size: medium;
+   }
+   .insider span{
+    color: #141E0D;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+   }
