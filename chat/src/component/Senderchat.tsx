@@ -1,11 +1,17 @@
 import React from "react";
 import '../css/dialogbox.css'
 import '../css/senderchat.css'
-const Senderchat : React.FC =()=>{
+
+
+interface  sendMessage { 
+
+    message : string | undefined
+}
+const Senderchat : React.FC<sendMessage> =(props)=>{
     return (<>
     <div className="external-sender">
         <div className="internal-sender">
-            <div className="sender-chat">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque animi rem iusto fugit mollitia, iure sapiente. Accusamus ipsum eligendi deserunt ratione quae? Similique inventore quibusdam autem possimus nesciunt perspiciatis saepe.</div>
+            <div className="sender-chat">{props.message}</div>
         </div>
     </div>
     </>)

@@ -3,13 +3,18 @@ import { Avatar } from "@chakra-ui/react";
 import img from "../Image/achyut.jpg"
 import '../css/dialogbox.css'
 
-const Dialogbox : React.FC =()=>{
+
+ interface receiverMessage{
+    message : string | undefined,
+    src : string | undefined
+ }
+const Dialogbox : React.FC<receiverMessage> =(props)=>{
     return (<>
     <div className="external-dialog">
         <div className="internal-dialog">
             <Avatar name="CoRider" borderRadius='100px'
-                  boxSize='60px' src={img}/>
-            <div className="user-chat">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque animi rem iusto fugit mollitia, iure sapiente. Accusamus ipsum eligendi deserunt ratione quae? Similique inventore quibusdam autem possimus nesciunt perspiciatis saepe.</div>
+                  boxSize='60px' src={props.src}/>
+            <div className="user-chat">{props.message}</div>
         </div>
     </div>
     </>)

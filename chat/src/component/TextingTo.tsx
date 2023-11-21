@@ -4,10 +4,14 @@ import { Heading , IconButton ,Image ,Menu, MenuButton,MenuList , MenuItem} from
 import '../css/talking.css'
 import img from '../Image/achyut.jpg'
 
+interface details{
+     from : string |undefined,
+     to : string | undefined
+}
 
 
 
-const TextingTo : React.FC=()=>{
+const TextingTo : React.FC<details>=(props)=>{
     return (<>
      <div className="external-talking">
             <div className="internal-talking">
@@ -18,8 +22,8 @@ const TextingTo : React.FC=()=>{
                   src={img}
                   />
                   <div className="insider">
-                  <Heading color="#606060"  margin='0' fontFamily= "Mulish" fontSize="16px" fontWeight="500" lineHeight= "normal"> From <span >Achyut</span></Heading>
-                  <Heading color="#606060" margin-top='10' fontFamily= "Mulish" fontSize="16px" fontWeight="500" lineHeight= "normal"> To <span>vardhan</span></Heading>
+                  <Heading color="#606060"  margin='0' fontFamily= "Mulish" fontSize="16px" fontWeight="500" lineHeight= "normal"> From <span >{props.from}</span></Heading>
+                  <Heading color="#606060" margin-top='10' fontFamily= "Mulish" fontSize="16px" fontWeight="500" lineHeight= "normal"> To <span>{props.to}</span></Heading>
                   </div>
                   </div>
                   {/* <HamburgerIcon fontSize={35} cursor="pointer" mr={20} /> */}
