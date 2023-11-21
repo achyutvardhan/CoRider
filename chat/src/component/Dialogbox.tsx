@@ -1,6 +1,5 @@
 import React from "react";
 import { Avatar } from "@chakra-ui/react"; 
-import img from "../Image/achyut.jpg"
 import '../css/dialogbox.css'
 
 

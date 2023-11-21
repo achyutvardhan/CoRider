@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import { useState } from "react"
 import {Box, Divider,AbsoluteCenter }from '@chakra-ui/react'
 import "../css/chat.css"
 import Dialogbox from "./Dialogbox"
@@ -23,7 +22,6 @@ interface chatItem {
 
 const ChatLog: React.FC<{chat: chatItem[]}>=(props)=>{
 
-   const [recevier,setreceiver] = useState<boolean|null>(null)
 
     return (
         <>
@@ -38,7 +36,7 @@ const ChatLog: React.FC<{chat: chatItem[]}>=(props)=>{
                 </Box>
                 { 
                  props.chat.map((data)=>{
-                    if(data.sender.self == true)
+                    if(data.sender.self === true)
                     {
                        return <Senderchat message={data.message} />
                     }else{
