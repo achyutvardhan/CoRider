@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef} from "react"
 import {Box, Divider,AbsoluteCenter }from '@chakra-ui/react'
 import "../css/chat.css"
 import Dialogbox from "./Dialogbox"
@@ -21,7 +21,12 @@ interface chatItem {
 
 
 const ChatLog: React.FC<{chat: chatItem[]}>=(props)=>{
-
+ const messageEndRef = useRef<null | HTMLDivElement>(null)
+ useEffect(()=>{
+    if(messageEndRef.current){
+        messageEndRef.current.scrollIntoView();
+    }
+ },[props.chat])
 
     return (
         <>
@@ -35,16 +40,16 @@ const ChatLog: React.FC<{chat: chatItem[]}>=(props)=>{
                  </AbsoluteCenter>
                 </Box>
                 { 
-                 props.chat.map((data)=>{
+                 props.chat.map((data ,i )=>{
                     if(data.sender.self === true)
                     {
-                       return <Senderchat message={data.message} />
+                       return <Senderchat key={i} message={data.message} />
                     }else{
-                       return <Dialogbox message={data.message} src={data.sender.image} />
+                       return <Dialogbox key={i} message={data.message} src={data.sender.image} />
                     }
                  }) 
                }
-
+               <div ref={messageEndRef}></div>
             </div>
         </div>
         </>

@@ -1,13 +1,15 @@
 .external-chat{
     width: 100%;
     margin: 0%;
-    padding: 0%;
+    margin-bottom: 20%;
+    padding: 0%;    
     overflow-y:scroll ;
-    height: 50%;
+    height: 60%;
    }
    
    .internal-chat{
        /* overflow-y: scroll; */
+       height: 60%;
        padding: 40px;
        display: flex;
        flex-direction: column;

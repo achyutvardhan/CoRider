@@ -18,12 +18,12 @@ const TextingTo : React.FC<details>=(props)=>{
                   <div className='one-box'>
                   <Image
                   borderRadius='100px'
-                  boxSize='90px'
+                  boxSize='70px'
                   src={img}
                   />
                   <div className="insider">
-                  <Heading color="#606060"  margin='0' fontFamily= "Mulish" fontSize="16px" fontWeight="500" lineHeight= "normal"> From <span >{props.from}</span></Heading>
-                  <Heading color="#606060" margin-top='10' fontFamily= "Mulish" fontSize="16px" fontWeight="500" lineHeight= "normal"> To <span>{props.to}</span></Heading>
+                  <Heading color="#606060"  margin='0' fontFamily= "Mulish" fontSize="14px" fontWeight="500" lineHeight= "normal"> From <span >{props.from}</span></Heading>
+                  <Heading color="#606060" margin-top='10' fontFamily= "Mulish" fontSize="14px" fontWeight="500" lineHeight= "normal"> To <span>{props.to}</span></Heading>
                   </div>
                   </div>
                   {/* <HamburgerIcon fontSize={35} cursor="pointer" mr={20} /> */}

@@ -11,7 +11,7 @@ const InputArea:React.FC=()=>{
     return (<>
     <div className='external-input'>
         <div className='internal-input'>
-        <Textarea placeholder='large size' size='lg' width='90%' h='35'resize='none' overscrollY='auto' outline='none' variant='unstyled' border='none' fontSize='20'/>
+        <Textarea placeholder='Enter Text' size='lg' width='90%' h='35'resize='none' overscrollY='auto' outline='none' variant='unstyled' border='none' fontSize='20'/>
              <div className="in-box">
                 <Menu >
                     <MenuButton

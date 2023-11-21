@@ -4,6 +4,7 @@ import '../css/dialogbox.css'
 
 
  interface receiverMessage{
+    key : number | undefined
     message : string | undefined,
     src : string | undefined
  }
@@ -13,7 +14,7 @@ const Dialogbox : React.FC<receiverMessage> =(props)=>{
         <div className="internal-dialog">
             <Avatar name="CoRider" borderRadius='100px'
                   boxSize='60px' src={props.src}/>
-            <div className="user-chat">{props.message}</div>
+            <div className="user-chat">`{props.message}`</div>
         </div>
     </div>
     </>)

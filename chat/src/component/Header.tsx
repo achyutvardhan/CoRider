@@ -14,7 +14,7 @@ const Header : React.FC<headername>=(props)=>{
             <div className="internal-header">
                   <div className='one-box'>
                   <ArrowBackIcon fontSize={25} />
-                  <Heading ml={50} as='h1'>{props.name}</Heading>
+                  <Heading ml={50} as='h2'>{props.name}</Heading>
                   </div>
                   <EditIcon fontSize={25} mr={20} />
             </div>
