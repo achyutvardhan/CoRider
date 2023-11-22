@@ -1,5 +1,5 @@
 const CACHE_NAME = "version-1";
-const urlsToCache = [ './index.html', './offline.html' ];
+const urlsToCache = [ '/index.html', '/offline.html' ];
 
 const self = this;
 
@@ -10,7 +10,12 @@ self.addEventListener('install', (event) => {
             .then((cache) => {
                 console.log('Opened cache');
 
-                return cache.addAll(urlsToCache);
+                return  cache.addAll([
+                    '/static/js/bundle.js',
+                    '/index.html',
+                    '/offline.html',
+                    '/'
+                 ]);
             })
     )
 });

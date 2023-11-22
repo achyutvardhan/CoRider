@@ -37,7 +37,7 @@ const [chatdata,setchatdata] = useState<ApiResponse | null>(null)
       await axios.get<ApiResponse>('https://qa.corider.in/assignment/chat?page=0')
       .then((res)=>{
         setchatdata(res.data)
-        console.log(res.data)
+        // console.log(res.data)
       }).catch((err)=> console.log(err));
     };
     fetchData();
