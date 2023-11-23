@@ -15,4 +15,12 @@
        flex-direction: column;
        height: 100%;
    }
+   .external-chat::-webkit-scrollbar {
+    display: none;
+  }
+  
 
+  .external-chat {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  } 

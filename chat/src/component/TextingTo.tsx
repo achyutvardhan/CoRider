@@ -2,7 +2,7 @@ import React from "react"
 import {HamburgerIcon} from '@chakra-ui/icons'
 import { Heading , IconButton ,Image ,Menu, MenuButton,MenuList , MenuItem} from '@chakra-ui/react'
 import '../css/talking.css'
-import img from '../Image/achyut.jpg'
+import img from '../Image/icons8-member-96.png'
 
 interface details{
      from : string |undefined,

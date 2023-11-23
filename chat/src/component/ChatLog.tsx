@@ -45,7 +45,7 @@ const ChatLog: React.FC<{chat: chatItem[]}>=(props)=>{
                     {
                        return <Senderchat key={i} message={data.message} />
                     }else{
-                       return <Dialogbox key={i} message={data.message} src={data.sender.image} />
+                       return <Dialogbox key={i} verfication={data.sender.is_kyc_verified} message={data.message} src={data.sender.image} />
                     }
                  }) 
                }

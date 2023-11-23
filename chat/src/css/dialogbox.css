@@ -23,3 +23,12 @@ width: 60%;
 background: #FFF;
 box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
 }
+
+.profilepic  {
+   position: relative;
+}
+.blue-tick{
+    position: relative;
+    left: 45px;
+    bottom: 25px;
+}
